@@ -28,6 +28,9 @@ h1 {
   color: whitesmoke;
   
 }
+.placeholder {
+  text-align: center;
+}
 
 /* .beer {
   width: 10rem;
