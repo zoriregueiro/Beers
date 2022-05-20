@@ -31,7 +31,7 @@ const Beers = () => {
         onChange={filterData}
         value={filter}
       ></input>
-      <div>
+      <div className="container">
         {beers
           .filter((beer) => beer.filterName.includes(filter))
           .map((beer) => (

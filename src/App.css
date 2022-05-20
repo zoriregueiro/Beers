@@ -26,12 +26,10 @@ h1 {
   background-color: rgb(181, 162, 162);
   border-radius: 0.5rem;
   color: whitesmoke;
-  
 }
-.placeholder {
+.toolBar::placeholder {
   text-align: center;
 }
-
 /* .beer {
   width: 10rem;
   height: 10rem;

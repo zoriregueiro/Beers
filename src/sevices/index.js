@@ -19,7 +19,7 @@ export const getBeer = async (id) => {
     console.log(res);
     const body = await res.json();
     console.log(body);
-    getBeer.cache = body;
+    getBeer.cache = body[0];
   }
 
   return getBeer.cache;
