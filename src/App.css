@@ -30,9 +30,28 @@ h1 {
 .toolBar::placeholder {
   text-align: center;
 }
-/* .beer {
-  width: 10rem;
-  height: 10rem;
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container {
+  width: 500px;
+  height: 450px;
   margin: 3rem;
-  background-color: gray;
-} */
+  padding: 1rem;
+  background-color: rgba(176, 99, 121, 0.33);
+  border-radius: 1rem;
+  box-shadow: 2px 0px 20px 0px rgba(00, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.container > p:nth-child(1) {
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+.container > p:nth-child(2) {
+  padding-right: 1rem;
+}

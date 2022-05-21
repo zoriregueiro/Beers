@@ -14,13 +14,14 @@ export const getBeers = async () => {
 };
 
 export const getBeer = async (id) => {
-  if (!getBeer.cache) {
-    const res = await fetch("https://api.punkapi.com/v2/beers/" + id);
+  if (!getBeer.cache) getBeer.cache = {};
+  if (!getBeer.cache[id]) {
+    const res = await fetch(`https://api.punkapi.com/v2/beers/${id}`);
     console.log(res);
     const body = await res.json();
     console.log(body);
-    getBeer.cache = body[0];
+    getBeer.cache[id] = body[0];
   }
 
-  return getBeer.cache;
+  return getBeer.cache[id];
 };
